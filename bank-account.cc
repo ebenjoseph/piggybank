@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void BankAccount::open_account() {
+void BankAccount::openAccount() {
 	cout << "Enter your name:" << endl;
 	cin.ignore();
 	cin.getline(name, 100);
@@ -13,18 +13,18 @@ void BankAccount::open_account() {
 	cout << "Your account ID is: " << acctNumber << " Remember it and keep it safe!" << endl;
 }
 
-int BankAccount::get_balance() {
+int BankAccount::getBalance() {
 	return deposit;
 }
 
-void BankAccount::deposit_money(int num) {
+void BankAccount::depositMoney(int num) {
 	deposit += num;
 }
 
-void BankAccount::withdraw_money(int num) {
+void BankAccount::withdrawMoney(int num) {
 	deposit -= num;
 }
 
-int BankAccount::get_acct_number() {
+int BankAccount::getAcctNumber() {
 	return acctNumber;
 }

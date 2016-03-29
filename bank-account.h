@@ -22,11 +22,11 @@ class BankAccount {
 	int deposit;
 	
  public:
- 	void open_account();
- 	int get_balance();
- 	void deposit_money(int);
- 	void withdraw_money(int);
- 	int get_acct_number();
+ 	void openAccount();
+ 	int getBalance();
+ 	void depositMoney(int);
+ 	void withdrawMoney(int);
+ 	int getAcctNumber();
 
 };
 
