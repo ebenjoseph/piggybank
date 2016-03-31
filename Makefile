@@ -3,7 +3,7 @@
 CXX = g++
 CXXFLAGS = -O0 -o piggybank bank-account.cc
 
-TARGETS = piggybank
+TARGETS = piggybank 
 
 all: $(TARGETS)
 

@@ -42,7 +42,7 @@ bool runSubMenu() {
 		cin.ignore();
 		cin.get();
 	} while(ch!='Y');
-	
+
 	return false;
 }
 
@@ -146,6 +146,12 @@ void runMainMenu(int acct) {
 		cout << "You entered an invalid account number" << endl;
 		return;
 	}
+
+	// create a backup before doing any operations
+	ostringstream backupOss;
+	backupOss << "cp " << oss.str() << " " << oss.str() << ".backup";
+	system(backupOss.str().c_str());
+
 	accountFile.read(reinterpret_cast<char *> (&ba), sizeof(BankAccount));
 
 	do {
